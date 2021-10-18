@@ -9,17 +9,17 @@
 </head>
 <body>
     <h1><%= title %></h1>
-    <form id="new-form" action="/boardposts" method="POST">
+    <form id="new-form" action="/boardposts/newPost" method="POST">
       <div>
         <label for="title-input">Job Title:</label>
-        <select type='text' name="title" id="title">
+        <select type='text' name="title" id="title" required>
             <option type='text'value="Embalmer">Embalmer</option>
             <option type='text'value="Transporter">Transporter</option>
           </select>
       </div>
       <div>
         <label for="content-input">Job description:</label>
-        <input type="text" name="content" id="boardpost-content-input">
+        <input type="text" name="content" id="boardpost-content-input" required>
       </div>
       <div>
         <label for="date">Time:</label>
